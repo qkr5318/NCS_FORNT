@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이여행사</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vegas.min.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+   
+    <script src="javascript/jquery-2.2.4.min.js"></script>
+    <script src="javascript/jquery.bxslider.min.js"></script>
+    <!-- defer 속성은 script가 잠깐 지연 되도록 하여 -->
+    <!-- HTML 구문 분석이 완료된 후 스크립트를 실행하도록 함 -->
+    <script src="javascript/script.js" defer type="text/javascript"></script>
+   
+
+    
+</head>
+<body>
+
+
+
+    <div class="wrapper">
+        <header>
+            <!-- .top은 .logo와 .menu를 묶어줌 -->
+            <div class="top">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt="로고 이미지"></a>
+                </div>
+                <nav class="menu">
+                    <ul class="navi">
+                        <li>
+                            <a href="#">여행</a>
+                            <ul class="submenu">
+                                <li><a href="#">국내여행</a></li>
+                                <li><a href="#">해외여행</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                        <a href="#">자유여행</a>
+                        <ul class="submenu">
+                            <li><a href="#">자유여행</a></li>
+                            <li><a href="#">패키지여행</a></li>
+                        </ul>
+                        </li>
+                        <li>
+                            <a href="#">항공권</a>
+                            <ul class="submenu">
+                                <li><a href="#">예약하기</a></li>
+                                <li><a href="#">예약확인</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">오시는길</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="brand">
+                    <h1>하이여행사</h1>
+                </div>
+            </div>
+        </header>
+        <!-- .bodywrap은 .imgslide와 .contents를 묶어줌 -->
+        <div class="gallery-wrap">
+            <div class="slide_gallery">
+                <a href="#">
+                    <img src="images/tr1.jpg" alt="이미지 1">
+                
+                </a>
+                <a href="#">
+                    <img src="images/tr2.jpg" alt="이미지 2">
+                
+                </a>
+                <a href="#">
+                    <img src="images/tr3.jpg" alt="이미지 3">
+                
+                </a>
+            </div>
+        </div>
+             
+        <script>
+            $(function(){
+                $('.slide_gallery').bxSlider({
+                auto: true, //자동으로 애니메이션 시작
+                autoControls: true, // 시작 미 중지버튼 표시
+                speed:500, //애니메이션 전환 속도 설정 (500= 5ms = 0.5초)
+                pause:1000,// 애니메이션 유지 시간 (1000= 10ms = 1초)
+                stopAutoOnClick: true, // 이전(<) 또는 다음(>) 버튼을 누르면 슬라이드가 정지됨
+                pager: true, // 페이지 표시 보여짐
+            });
+            });
+        </script>
+        <div class="contents">
+            <div class="notice">
+                <div class="tab">
+                    <h4>이벤트</h4> 
+                </div>
+                <ul>
+                    <li><a href="cookie.html">
+                    유럽 자유여행 4~5일 특가
+                    <span>2022.12.10</span>
+                    </a></li>                    
+                    <li><a href="#">
+                    우정현과 함께하는 여행 참가 모집
+                    <span>2022.08.11</span>
+                    </a></li>
+                    <li><a href="#">
+                    아프니깐 여행이다 특가
+                    <span>2021.05.12</span>
+                    </a></li>
+                    <li><a href="#">
+                    국내여행 패키지 상품
+                    <span>2020.04.13</span>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="gallery">
+                <div class="tab">
+                    <h4>영상</h4>
+                </div>
+                <span class="mp4">
+
+                </span>
+            </div>
+            
+            <div class="shortcut">
+                <h4>유튜브</h4>
+                <iframe width="200" height="160" margin-top="px" src="https://www.youtube.com/embed/EVfz9Vz092g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+   
+
+    <footer>
+        <div class="copy">
+            COPYRIGHT ©	by WEBDESIGN. ALL RIGHTS RESERVED
+        </div>
+        <div class="site">
+            <div class="btmenu">
+                <ul>
+                    <li><a href="#"><img class="footer_logo" src="images/fe.svg" alt="페이스북"></a></li>
+                    <li><a href="#"><img class="footer_logo" src="images/in.svg" alt="인스타"></a></li>
+                    <li><a href="#"><img class="footer_logo" src="images/tw.svg" alt="트위터"></a></li>
+                </ul>
+            </div>
+            <div class="familysite">
+                <select name="sitelist">
+                    <option value="#">패밀리사이트1</option>
+                    <option value="#">패밀리사이트2</option>
+                    <option value="#">패밀리사이트3</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+    </div>
+     <script src="javascript/vegas.min.js"></script>
+    
+    <script>
+        $(function(){
+            // $('body').vegas({
+            //     delay: 3000,
+            //     slides: [
+            //         { src: '/images/nature-1.jpg' },
+            //         { src: '/images/nature-2.jpg' },
+            //         { src: '/images/nature-3.jpg' }
+            //     ]
+            // });
+            $('.mp4').vegas({
+                slides: [
+                    
+                    {   src: '../images/nature-3.jpg',
+                        video: {
+                            src: [
+                                'videos/vegas.mp4',
+                            ],
+                            loop: true,
+                            mute: true
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
